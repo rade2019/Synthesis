@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,58 +20,47 @@ Google fonts api stuff
 <link href='https://fonts.googleapis.com/css?family=Calibri' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Calibri' rel='stylesheet'>
 
-$for(author-meta)$<meta name="author" content="$author-meta$" />$endfor$
-$if(date-meta)$<meta name="date" content="$date-meta$" />$endif$
-<title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+<meta name="author" content="Rosangela Devilla" />
 
-$for(header-includes)$
-$header-includes$
-$endfor$
+<title>Using Machine Learning to predict chlorophyll-a for water quality monitoring and management</title>
 
-$if(highlightjs)$
-<link rel="stylesheet" href="$highlightjs$/$if(highlightjs-theme)$$highlightjs-theme$$else$default$endif$.css" $if(html5)$$else$type="text/css" $endif$/>
-<script src="$highlightjs$/highlight.js"></script>
-<script type="text/javascript">hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-$endif$
 
-$if(highlighting-css)$<style type="text/css">$highlighting-css$</style>$endif$
 
-$for(css)$
-<link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
-$endfor$
+
+
 
 <style>
 @page {
-size: $poster_width$ $poster_height$;
+size: 841mm 1189mm;
 margin: 0;
 padding: 0;
 }
 body {
 margin: 0;
 font-size: 32pt;
-width: $poster_width$;
-height: $poster_height$;
+width: 841mm;
+height: 1189mm;
 padding: 0;
 text-align: justify;
 font-family: Calibri;
-background-image: url(resources/background/poster-$theme$.svg);
+background-image: url(resources/background/poster-teal.svg);
 background-size: cover;
 background-repeat: no-repeat;
 }
 .poster_wrap {
-width: $poster_width$;
-height: $poster_height$;
+width: 841mm;
+height: 1189mm;
 padding: 0cm;
 }
 .title_container {
-width: $poster_width$;
-height: calc($poster_height$ * 0.145);
+width: 841mm;
+height: calc(1189mm * 0.145);
 text-align: left;
 overflow: hidden;
 color: #ffffff;
 }
 .poster_title {
-text-align: $title_textalign$;
+text-align: ;
 position: relative;
 float: left;
 height: 100%;
@@ -87,21 +76,21 @@ column-count: 2;
 -webkit-column-fill: auto;
 -moz-column-fill: auto;
 column-fill: auto;
--webkit-column-rule-width: $columnline_width$;
--moz-column-rule-width: $columnline_width$;
-column-rule-width: $columnline_width$;
--webkit-column-rule-style: $columnline_style$;
--moz-column-rule-style: $columnline_style$;
-column-rule-style: $columnline_style$;
--webkit-column-rule-color: $columnline_col$;
--moz-column-rule-color: $columnline_col$;
-column-rule-color: $columnline_col$;
+-webkit-column-rule-width: ;
+-moz-column-rule-width: ;
+column-rule-width: ;
+-webkit-column-rule-style: ;
+-moz-column-rule-style: ;
+column-rule-style: ;
+-webkit-column-rule-color: ;
+-moz-column-rule-color: ;
+column-rule-color: ;
 width: 100%;
 height: 100%;
-color: $body_textcol$;
+color: ;
 }
 .poster_title h1 {
-font-size: $title_textsize$;
+font-size: 100pt;
 margin: 0;
 border: 0;
 height: 45%;
@@ -115,11 +104,11 @@ font-weight: normal;
 }
 .poster_body_wrap{
 position: absolute;
-top: calc($poster_height$ * 0.25);
+top: calc(1189mm * 0.25);
 width: 90%;
-height: calc($poster_height$ * 0.63);
-padding-top: calc($poster_height$ * 0.01);
-padding-bottom: calc($poster_height$ * 0.01);
+height: calc(1189mm * 0.63);
+padding-top: calc(1189mm * 0.01);
+padding-bottom: calc(1189mm * 0.01);
 margin-left: 5%;
 margin-right: 5%;
 }
@@ -146,7 +135,7 @@ font-weight: normal;
 }
 #BU_link {
   margin: 0px 5%;
-  color: $theme_darkcol$;
+  color: ;
   font-size: 34pt;
   font-weight: bold;
 }
@@ -187,7 +176,7 @@ margin-bottom: 2mm;
 font-weight: bold;
 }
 .poster_body h2 {
-color: $sectitle2_textcol$;
+color: ;
 font-size: 44pt;
 font-weight: bold;
 }
@@ -330,16 +319,11 @@ font-size: 20pt;
 </style>
 
 
-$if(theme)$
-<link rel="stylesheet" href="resources/css/$theme$.css" $if(html5)$$else$type="text/css" $endif$/>
-$endif$
+<link rel="stylesheet" href="resources/css/teal.css" type="text/css" />
 
 </head>
 <body>
 
-$for(include-before)$
-$include-before$
-$endfor$
 
 <div class="poster_wrap">
 
@@ -347,51 +331,83 @@ $endfor$
 
 <!-- Poster Title -->
 <div class= "poster_title">
-<h1 id="title">$title$</h1>
-<h2 id="subtitle">$subtitle$</h2>
-<h3 id="author">$author$</h3>
-<h5 id="affiliation"><i class='fab fa-github'></i> <a href="$github_link$">$github_link$</a> $if(dap_link)$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAP: $dap_link$ $endif$</h5>
+<h1 id="title">Using Machine Learning to predict chlorophyll-a for water quality monitoring and management</h1>
+<h2 id="subtitle"></h2>
+<h3 id="author"><strong>Rosangela Devilla</strong></h3>
+<h5 id="affiliation"><i class='fab fa-github'></i> <a href="www.github.com/rade2019/Synthesis">www.github.com/rade2019/Synthesis</a> </h5>
 
 </div>
 </div>
 <div class="BU_block">
-  <p id="BU">$business_unit$</p>
+  <p id="BU">Agriculture and Food</p>
   <p id="BU_link"><a href="http://www.csiro.au">www.csiro.au</a></p>
 </div>
 <div id="new_intro" class="introduction">
-  <img class='photo' src="$photo$">
+  <img class='photo' src="resources/picture.jpg">
 </div>
 
 <div class='poster_body_wrap'>
 <div class='poster_body'>
-$body$
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>I’m an Ag&amp;F experimental scientist from Plant &amp; Oil Engineering Group working on the development and application of analytical chemistry methods using mass spectrometry.
+Previously to Data School, analyses of data were performed using Excel sheets and statistical software packages.</p>
+</div>
+<div id="my-synthesis-project" class="section level1">
+<h1>My Synthesis Project</h1>
+<p>My Synthesis Project aims to use Machine Learning to predict chlorophyll-a in ocean waters for monitoring and management of water quality.</p>
+<p>Chlorophyll-a concentration is an indicator of the ecological health of aquatic environments, and its distribution and intensity may reveal regional eutrophication and the levels of primary productivity.
+The data obtained for this study were collected during cruises conducted in five regions around Australian coast, including areas of high complexity biogeochemical processes.</p>
+<p>This project analyses the performance of a machine learning model using multiple regression to predict chlorophyll-a concentrations from a set of environmental features.
+The accuracy of each model is evaluated via the coefficient of determination (R2) and the mean absolute percentage error (MAPE). Optimization algoritms such as Stochastic Gradient Descent (SGD) method were used to find the best fit. Lasso Regression was also used for variable selection and improvement of prediction accuracy.</p>
+</div>
+<div id="my-digital-toolbox" class="section level1">
+<h1>My Digital Toolbox</h1>
+<p>For this project, I used the following digital tools:</p>
+<ul>
+<li>Python - SKlearn, numpy, matplotlib, seaborn, pandas, MICE-SKlearn,
+statsmodels</li>
+<li>GitHub</li>
+<li>GitBash</li>
+</ul>
+</div>
+<div id="my-time-went" class="section level1">
+<h1>My time went …</h1>
+<p>Most of the time was dedicated to preparation and pre-processing of data. The selection of the right tools for data imputation and standardization as well as getting to know the data and understanding relationships and behaviour were the most time consuming aspects of the project.</p>
+</div>
+<div id="next-steps" class="section level1">
+<h1>Next steps</h1>
+<p>The next steps will involve a comparison of performances using different machine learning approaches.</p>
+<p>Carrying on developing skills using Machine Learning aproaches and other Data School acquired skills (Python and R coding) in analytical chemistry field and mass spectrometry imaging.</p>
+<p><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/></p>
+<p><strong>Raw data: partial visualization (total data: 24 features, 296 obs, 7104 datapoints)</strong></p>
+<p><img src="resources/overviewred.png" style="width:50.0%" /></p>
+<p><strong>Data scaling: comparing different scalers applied on data</strong>
+<img src="resources/scaler1.png" style="width:60.0%" />
+<img src="resources/scaler2.png" style="width:60.0%" /></p>
+<p><strong>Predicted X Actual: R score 0.79 </strong>
+<img src="resources/prediction.png" style="width:95.0%" /></p>
+</div>
+<div id="my-data-school-experience" class="section level1">
+<h1>My Data School Experience</h1>
+<p>Data School has been a fantastic experience. Machine Learning, statistical modelling, R and Python are my favourite tools. The data analysis methods and techniques learned in Data School are an essential component of modern approaches towards dealing with scientific data. The skills acquired in Data School will be applied in my daily work and certainly will improve productivity by automating the processing and analysis of data generated by analytical chemistry instrumentation.
+The methods will also be applied for data standardization wich will transform the acquired data into a consistent and reproducible format, making it easier to analyse.
+I plan to continue improving my skills on ML, statistical modelling and coding using Python and R.</p>
+</div>
 </div>
 </div>
 <div id="new_refs">
 </div>
 </div>
 
-$if(math)$
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-var script = document.createElement("script");
-script.type = "text/javascript";
-var src = "$if(mathjax)$$mathjax$$endif$";
-if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-if (location.protocol !== "file:" && /^https?:/.test(src))
-src = src.replace(/^https?:/, '');
-script.src = src;
-document.getElementsByTagName("head")[0].appendChild(script);
-})();
-</script>
-$endif$
 
 <script type="text/javascript" src="resources/js/move_sections.js"></script>
 
-$for(include-after)$
-$include-after$
-$endfor$
 
 </body>
 </html>
