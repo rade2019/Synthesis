@@ -39,7 +39,7 @@ library(kableExtra)
 # Introduction
 
 I'm an Ag&F experimental scientist from Plant & Oil Engineering Group working on the development and application of analytical chemistry methods using mass spectrometry. 
-Previously to Data School, analyses of data were performed using Excel sheets and analysis on statistical software packages. 
+Previously to Data School, analyses of data were performed using Excel sheets and statistical software packages. 
 
 
 # My Synthesis Project
