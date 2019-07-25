@@ -5,7 +5,7 @@ theme: teal #options are midday, blueberry, sky, teal, mint, and forest
 
 author:  "**Rosangela Devilla**"
 github_link: www.github.com/rade2019/Synthesis
-photo: resources/img/picture2.jpg
+photo: resources/picture.jpg
 
 title_textsize: 100pt         # Poster title fontsize
 
@@ -36,17 +36,11 @@ library(gganimate)
 library(kableExtra)
 ```
 
-<br/>
-<br/>
-
 # Introduction
 
 I'm an Ag&F experimental scientist from Plant & Oil Engineering Group working on the development and application of analytical chemistry methods using mass spectrometry. 
 Previously to Data School, analyses of data were performed using Excel sheets and analysis on statistical software packages. 
-<br/>
-<br/>
-<br/>
-<br/>
+
 
 # My Synthesis Project
 
@@ -60,10 +54,7 @@ The data obtained for this study were collected during cruises conducted in five
 
 This project analyses the performance of a machine learning model using multiple regression to predict chlorophyll-a concentrations from a set of environmental features.
 The accuracy of each model is evaluated via the coefficient of determination (R2) and the mean absolute percentage error (MAPE). Optimization algoritms such as Stochastic Gradient Descent (SGD) method were used to find the best fit. Lasso Regression was also used for variable selection and improvement of prediction accuracy.
-<br/>
-<br/>
-<br/>
-<br/>
+
 
 # My Digital Toolbox
 
@@ -73,39 +64,23 @@ For this project, I used the following digital tools:
 statsmodels 
 * GitHub
 * GitBash
-<br/>
-<br/>
-<br/>
 
 # My time went ...
 
 Most of the time was dedicated to preparation and pre-processing of data. The selection of the right tools for data imputation and standardization as well as getting to know the data and understanding relationships and behaviour were the most time consuming aspects of the project. 
-<br/>
-<br/>
-<br/>
 
 # Next steps
 
 The next steps will involve a comparison of performances using different machine learning approaches.
 
 Carrying on developing skills using Machine Learning aproaches and other Data School acquired skills (Python and R coding) in analytical chemistry field and mass spectrometry imaging.
+
 <br/>
 <br/>
 <br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+<br/>
+<br/>
 
 **Raw data: partial visualization (total data: 24 features, 296 obs, 7104 datapoints)**
 
